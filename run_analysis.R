@@ -41,4 +41,4 @@ avg_all <- all_mean_std %>% group_by(Subject, Activity) %>% summarise_all(mean)
 
 # output to file 
 write.table(all_mean_std, "cleaned.txt") 
-write.table(avg_all,"second.txt",row.name=FALSE) 
+write.table(avg_all,"tidydata.txt",row.name=FALSE) 
